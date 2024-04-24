@@ -1,0 +1,530 @@
+/* CSS By Araceli Valles */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+:root{
+    font-size: 16px;
+    --white: #fff;
+    --black: #000;
+    --med-gray: #555;
+    --box-shadow: -5px 5px 5px 6px var(--med-gray);
+}
+
+html, body {
+    width: 1280px;
+    margin: 0 auto; /* This centers the page horizontally */
+}
+
+
+/* ---- SKIP LINK STYLES ---- */
+#skip{
+    position: absolute;
+    left: -100000px;    
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+header, main, footer{
+    width: 100%;
+    padding: 16px;
+    max-width: calc(1280px - 32px);
+    margin: 0 auto;
+}
+
+
+/* ---- BODY STYLES ---- */
+body{
+    line-height: 1.35;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+
+/* ---- HEADER STYLES ---- */
+header{
+    padding: 1rem;
+    width:calc(100% - 2rem);
+}
+
+#header-content{
+    max-width: 1200;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+/* ---- HEADER STYLES ---- */
+h1{
+    margin: 10%;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#aboutBG h2{
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.50rem;
+    margin: 0.5rem ;
+}
+
+h2, h3{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30px;;
+}
+
+
+/* ---- NAVIGATION STYLES ---- */
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    font-size: 25px;
+}
+
+nav a{   
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+nav a:hover{
+    color: #9000ff;
+}
+
+/*--- Dark/Light---*/
+.darkmode {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+
+.mode-toggle svg {
+    width: 100%;
+  }
+
+.darkmode .mode-toggle {
+    color: #ffffff;
+}
+
+
+
+/* ----IMAGE STYLES ---- */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.15rem; 
+} 
+
+
+/* --- ABOUT STYLES ---*/
+#about h2{
+    padding: 50px;
+}
+
+#about p{
+    text-align: center;
+    float: right;
+}
+
+#about img{
+    padding: 50px;
+    border-radius: 25% 10%;
+    float: left;
+
+}
+
+#about h3{
+    text-align: center;
+    padding-top: 200px
+}
+
+#about li {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+#about ul{
+    list-style: inside;
+}
+
+
+/*--- LINEUP ---*/
+#lineup{
+    background-image: url('images/edcbg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: var(--black);
+}
+
+#lineup h2{
+    text-align: center;
+    padding-top: 120px;
+
+}
+
+#lineup h3{
+    text-align: center;
+}
+
+#lineup li{
+    text-align: center;
+    font-size: large;
+}
+
+#lineup ul{
+    text-align: center;
+    list-style: inside;
+    padding: 40px;
+}
+
+.lineupList{
+    column-count: 2;
+}
+
+#lineup{
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: 1280px;
+}
+
+.hiddenItem{
+    display: none;
+}
+
+#lineup img{
+    border-radius: 2%;
+    float: right;
+    padding: 20px
+}
+
+#kineticField img {
+    grid-row: 1/-1;
+}
+
+/*---Buttons --- */
+button, input[type="submit"]{
+    display: block;
+    padding: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    box-shadow: var(--box-shadow);
+} 
+
+input[type="submit"]:hover{
+    color:#9000ff;
+    cursor: pointer;
+}
+
+button{
+    text-transform: uppercase;
+}
+
+
+.mode-toggle {
+    position: absolute; 
+    z-index: 100;
+    top: 1em;
+    right: 1em;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    color: var(--black);
+  }
+
+
+#switcherButtons .currentItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 1rem;
+}
+
+
+#switcherButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin: 5rem auto;
+    width: 80%;
+    padding-top: 20px;
+}
+
+button:hover{
+    color:#9000ff;
+    cursor: pointer;
+}
+
+/*---GUESSING GAME ---*/
+#game{
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+#game h2{
+    text-align: center;
+}
+
+#game p {
+    text-align: center;
+    padding: .5rem;
+    font-size: 12pt;
+}
+
+#gameForm {
+    text-align: center;
+}
+
+#gameForm label{
+    font-weight: bold;
+    margin: 0.5rem auto;
+    font-size: 1.2rem;
+}
+
+#gameForm button{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 20px;
+} 
+
+#userGuess {
+    font-size: 1rem;
+    margin: 0.5rem auto;
+    width: 50px;
+    margin-left: 10px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#gameResults{
+    padding-top:15px;
+    text-align: center;
+}
+
+/*---CONTACT ---*/
+#contact{
+    background-image: url('images/edcbg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: var(--black);
+}
+
+#contact h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#contact p{
+    text-align: center;
+}
+
+#contactForm h3{
+    text-align: center;
+}
+
+#contactForm{
+    width:calc(100% - 2rem);
+    max-width: 400px;
+    margin: 1em auto;
+    padding-bottom: 50px;
+}
+
+#contact label{
+    display: block;
+    font-size: 1.2rem;
+}
+
+.required{
+    color: #DE0B63;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#contact input, textarea{
+    display: block;
+    font-size: 1.2rem;
+    height: 2rem;
+    width: calc(100% - 1.5rem);
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 0;
+    outline: none;
+}
+
+#contact fieldset{
+    border: 1px solid;
+    padding: 0;
+    margin: 1rem auto 0.5rem auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+#contact legend{
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
+#firstNameError{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    background: var(--white);
+}
+
+#lastNameError{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    background: var(--white);
+}
+
+#phoneNumError{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    background: var(--white);
+}
+
+#emailError{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    background: var(--white);
+}
+
+#messageError{
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    background: var(--white);
+}
+
+.hide{
+    visibility: hidden;
+    height: 1.5rem;
+    margin: 0.5rem 0 0 0;
+}
+
+textarea{
+    height: 5rem;
+}
+
+#mySubmit{
+    margin: 1rem auto;
+    font-weight: bold;
+}
+
+/*---SOCIAL LINKS ---*/
+#socials h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+#socials{
+    line-height: 2;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+#socials a{
+    padding: 10px;
+    color: inherit;
+}
+
+/*---FOOTER ---*/
+footer p{
+    text-align: center;
+}
+
+
+

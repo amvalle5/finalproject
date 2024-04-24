@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV Electric Daisy Carnival</title>
+    <meta name="author" content="Araceli Valles">
+    <meta name="description" content="EDC is an annual electronic dance music festival in Las Vegas with lots of artists and different genres">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Adobe Fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/url2ytz.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- JavaScript -->
+    <script src="scripts.js" defer></script>
+</head>
+<body>  
+    <a href="#main" id="skip">Skip to Main Content</a>
+
+    <header class="headerContent">
+        <div id="header-content">
+            <h1>EDC Las Vegas</h1>
+            <nav aria-label="Main Navigation" id="">
+                        <ul>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#lineup">LINEUP</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                        <!-- Light/Dark Mode --->
+                        <button id="mode-toggle" class="mode-toggle">
+                            <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                                <path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/>
+                            </svg>
+                        </button>
+            </nav>
+        </div>
+        <picture>
+            <source srcset="images/edclv_2024.jpeg" media="(max-width: 900px)">
+            <img src="images/edclv_2024.jpeg" alt="Vibrant backdrop representing the EDCLV festival with dates and location" width="1200" height="600">
+        </picture>
+    </header>
+    <main id="main">
+        <section id="about">
+            <div id="aboutBG">
+                <div>
+                    <h2>MEET US BACK UNDER THE ELECTRIC SKY</h2>
+                    <p>"Under the Electric Sky, we come together to celebrate life, love, art, and music. From the stages and the sound to the pyrotechnics and the performers, so many unique elements go into bringing this world to life. We invite you to wander, explore, interact, and connect. Imagination and positive energy are the currency of this place."</p>
+                    <section>   
+                        <img class="about-image" src="images/EDCLV-drone-shot.jpeg" alt="Electric Daisy Carnival from a drone shot of whole festival" width="650" height="400">
+                        <h3>What We Believe</h3>
+                        <ul>
+                            <li>Fueled By Positivity</li>
+                            <li>Love, Care and Connection Above All</li>
+                            <li>Built on Inclusivity</li>
+                            <li>Creativity in Everything We Do</li>
+                            <li>Taking Risks and Breaking Rules</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="lineup">
+                    <h2>2024 LINEUP BY STAGE</h2>
+                    <section id="kineticField" class="currentItem">
+                        <h3>Kinetic Field</h3>
+                        <img src="images/KineticField.jpeg" alt="Large crowd at Kinetic Field with flags in the air and a huge owl in the middle" width="500" height="400">
+                        <ul class="lineupList" aria-label="lineup list">
+                            <li>ACRAZE B2B KREAM</li>
+                            <li>ALESSO</li>
+                            <li>ALISON WONDERLAND</li>
+                            <li>ARMIN VAN BUUREN</li>
+                            <li>BENNY BENASSI</li>
+                            <li>DAVID GUETTA</li>
+                            <li>DJ SNAKE</li>
+                            <li>FISHER</li>
+                            <li>GRYFFIN</li>
+                            <li>ILLENIUM</li>
+                            <li>JOHN SUMMIT B2B GREEN VELVET</li>
+                            <li>KASKADE</li>
+                            <li>LOST FREQUENCIES</li>
+                            <li>MADDIX</li>
+                            <li>MATRODA</li>
+                            <li>MAU P</li>
+                            <li>MITIS</li>
+                            <li>MK</li>
+                            <li>NINAJIRACHI</li>
+                            <li>OWNBOSS</li>
+                            <li>RAYBEN</li>
+                            <li>STEVE AOKI</li>
+                            <li>SUBTRONICS</li>
+                            <li>TIËSTO</li>
+                            <li>WUKI</li>
+                            <li>ZEDD</li>
+                            <li>ZUEZEU</li>
+                        </ul>
+                        </section>
+                        <section id="cosmicMeadow" class="hiddenItem">
+                            <h3>Cosmic Meadow</h3>
+                            <img src="images/CosmicMeadow.jpeg" alt="Cosmic Meadow stage with fireworks going off behind it" width="500" height="400">
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>BOYS NOIZE</li>   
+                                <li>CAMDEN COX</li>
+                                <li>DABIN</li>
+                                <li>DEADMAU5</li>
+                                <li>DEEPER PURPOSE</li>
+                                <li>DEORRO</li>
+                                <li>DEVAULT</li>
+                                <li>DILLION FRANCIS</li>
+                                <li>DIPLO</li>
+                                <li>FROSTTOP B2B REMK</li>
+                                <li>HAMDI</li>
+                                <li>HUGEL</li>
+                                <li>KASABLANCA</li>
+                                <li>KHIVA</li>   
+                                <li>LSDREAM</li>
+                                <li>MARY DOPPINZ</li>
+                                <li>NOIZU B2B WESTEND B2B MELÉ</li>
+                                <li>ODD MOB</li>
+                                <li>PURPLE DISCO MACHINE</li>
+                                <li>SICARIA</li>
+                                <li>SLANDER</li>
+                                <li>SOFI TUKKER (DJ SET)</li>
+                                <li>TROYBOI</li>
+                                <li>VALENTINO KHAN</li>
+                                <li>WORSHIP (SUB FOCUS B2B DIMENSION B2B CULTURE SHOCK B2B 1991)</li>
+                            </ul>
+                        </section>
+                        <section id="circuitGrounds" class="hiddenItem">
+                            <h3>Circuit Grounds</h3>
+                            <img src="images/CircuitGrounds.jpeg" alt="Circuit Grounds stage with a huge crowd with different flags in the air" width="500" height="400">    
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>AIRWOLF PARADISE</li>
+                                <li>BEFORE DAWN</li>
+                                <li>BEN HEMSLEY</li>
+                                <li>BRINA KNAUSS</li>
+                                <li>CASSIAN</li>
+                                <li>CRISTOPH</li>
+                                <li>DOM DOLLA</li>
+                                <li>ELI BROWN B2B HI-LO</li>
+                                <li>ERIC PRYDZ</li>
+                                <li>EXCISION</li>
+                                <li>FOUR TET</li>
+                                <li>IVY</li>
+                                <li>JOHN SUMMIT</li>
+                                <li>KAYZO UNLEASHED XL</li>
+                                <li>KOVEN</li>
+                                <li>KYLE WALKER</li>
+                                <li>MARTIN GARRIX</li>
+                                <li>PEGGY GOU</li>
+                                <li>SEVEN LIONS</li>
+                                <li>SUB FOCUS</li>
+                                <li>TIMMY TRUMPET</li>
+                                <li>VINTAGE CULTURE</li>
+                                <li>WADE</li>
+                            </ul>
+                        </section>
+                        <section id="neonGarden" class="hiddenItem">
+                            <h3>NEON GARDEN</h3>
+                            <img src="images/NeonGarden.jpeg" alt="Neon Garden stage with a large crowd and factory 93 on the big screen" width="500" height="400">
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>ADAM BEYER</li>
+                                <li>ADAM X</li>
+                                <li>BEN STERLING</li>
+                                <li>CARL COX</li>
+                                <li>CARL COX B2B NICOLE MOUDABER</li>
+                                <li>CHELINA MANUHUTU</li>
+                                <li>DEBORAH DE LUCA</li>
+                                <li>HEIDI LAWDEN</li>
+                                <li>INDIRA PAGANOTTO</li>
+                                <li>JAIME JONES</li>
+                                <li>JOSEPH CAPRIATI</li>
+                                <li>KLANGKUENSTLER</li>
+                                <li>LILLY PALMER</li>
+                                <li>MALÓNE</li>
+                                <li>MARCEL DETTMANN</li>
+                                <li>NICOLE MOUDABER</li>
+                                <li>PEGGY GOU B2B MARCEL DETTMANN</li>
+                                <li>SARA LANDRY</li>
+                                <li>SHLOMO</li>
+                                <li>TRYM</li>
+                            </ul>
+                        </section>
+                        <section id="basspod" class="hiddenItem">
+                            <h3>Basspod</h3>
+                            <img src="images/basspod.jpeg" alt="Large crowd at the Basspod stage with hands in the air and flames shooting out" width="500" height="400">                       
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>ADVENTURE CLUB</li>
+                                <li>ATLIENS</li>
+                                <li>BOOGIE T</li>
+                                <li>BOU</li>
+                                <li>CASPA</li>
+                                <li>CHEF BOYARBEATZ</li>
+                                <li>CRANKDAT</li>
+                                <li>DIMENSION</li>
+                                <li>EMORFIK</li>
+                                <li>FALLEN WITH MC DINO</li>
+                                <li>GHASTLY PRESENTS GHENGAR</li>
+                                <li>HEDEX</li>
+                                <li>HOL!</li>
+                                <li>JEANIE</li>
+                                <li>JESSICA AUDIFFRED</li>
+                                <li>JON CASEY</li>
+                                <li>KAI WACHI</li>
+                                <li>LAYZ</li>
+                                <li>MARAUDA</li>
+                                <li>MERSIV</li>
+                                <li>NGHTMRE</li>
+                                <li>NIGHTSTALKER</li>
+                                <li>RATED R</li>
+                                <li>RICHTER</li>
+                                <li>SUBTRONICS B2B LEVEL UP</li>
+                                <li>SVDDEN DEATH</li>
+                                <li>TAPE B</li>
+                                <li>VIRTUAL RIOT</li>
+                                <li>VULLLGUR</li>
+                                <li>WILKINSON</li>
+                                <li>WOOLI</li>
+                                <li>ZINGARA</li>
+                                <li>ZOMBOY</li>
+                            </ul>
+                        </section>
+                        <section id="wasteland" class="hiddenItem">
+                            <h3>Wasteland</h3>
+                            <img src="images/Wasteland.jpeg" alt="Wasteland stage with lasers shooting out" width="500" height="400">
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>ADRENALIZE B2B WASTED PENGUINZ</li>
+                                <li>ANGERFIST</li>
+                                <li>ATMOZFEARS</li>
+                                <li>AUDIOFREQ</li>
+                                <li>CLAWZ B2B DOMINA</li>
+                                <li>CREEDS + HELEN KA</li>
+                                <li>D-STURB</li>
+                                <li>DA TWEEKAZ</li>
+                                <li>DEAD X B2B LEVENKHAN</li>
+                                <li>DEADLY GUNS</li>
+                                <li>DEATH CODE</li>
+                                <li>DEVIN WILD B2B KELTEK</li>
+                                <li>DEVIN WILD</li>
+                                <li>GEO</li>
+                                <li>GRAVEDGR</li>
+                                <li>HIVEMIND (KAYZO X SPACE LACES X MUST DIE!)</li>
+                                <li>HIXXY</li>
+                                <li>KELTEK</li>
+                                <li>KREATION B2B DARKSIDERZ</li>
+                                <li>LADY FAITH</li>
+                                <li>LIL TEXAS</li>
+                                <li>MANDY</li>
+                                <li>SOREN</li>
+                                <li>SOUND RUSH</li>
+                                <li>SUB ZERO PROJECT</li>
+                                <li>WARFACE</li>
+                                <li>WASTED PENGUINZ</li>
+                                <li>WATER SPIRIT</li>
+                                <li>YOSUF</li>
+                            </ul>
+                        </section>
+                        <section id="quantumValley" class="hiddenItem">
+                            <h3>Quantum Valley</h3>
+                            <img src="images/QuantumValley.jpeg" alt="Quantum Valley stage with lasers and totems in the air" width="500" height="400">
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>ALCHIMYST</li>
+                                <li>ALY & FILA</li>
+                                <li>ANDREW BAYER</li>
+                                <li>ANDREW RAYEL</li>
+                                <li>ARGY</li>
+                                <li>BLASTOYZ</li>
+                                <li>BRYAN KEARNEY</li>
+                                <li>DAXSON</li>
+                                <li>FERRY CORSTEN</li>
+                                <li>GUISEPPE OTTAVIANI</li>
+                                <li>GRIGORÉ</li>
+                                <li>INFECTED MUSHROOM</li>
+                                <li>JOHN OO FLEMING</li>
+                                <li>KHOMHA</li>
+                                <li>LUTTRELL</li>
+                                <li>MARKUS SCHULZ</li>
+                                <li>MARSH</li>
+                                <li>METTA & GLYDE</li>
+                                <li>MIND AGAINST</li>
+                                <li>MIYUKI</li>
+                                <li>NAZ</li>
+                                <li>NIFRA</li>
+                                <li>ORJAN NILSEN & MARK SIXMA PRESENT NILSIX</li>
+                                <li>PAUL OAKENFOLD (FULL ON FLUORO)</li>
+                                <li>PAUL VAN DYK</li>
+                                <li>PRYDA</li>
+                                <li>TALLA 2XLC</li>
+                                <li>TAYLOR TORRENCE</li>
+                                <li>YOTOO</li>
+                            </ul>
+                        </section>
+                        <section id="stereoBloom" class="hiddenItem">
+                            <h3>Stereo Bloom</h3> 
+                            <img src="images/StereoBloom.jpeg" alt="Large crowd at Stereo Bloom with flames shooting out on stage" width="500" height="400">
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>ABANA B2B D. ZELEDON</li>
+                                <li>ANDRUSS</li>
+                                <li>BEC</li>
+                                <li>CALUSSA</li>
+                                <li>ELI BROWN</li>
+                                <li>HANNAH LAING</li>
+                                <li>HONEYLUV</li>
+                                <li>J. WORRA</li>
+                                <li>JOLUCA</li>
+                                <li>KEVIN DE VRIES</li>
+                                <li>KEVIN SAUNDERSON B2B DJ MINX</li>
+                                <li>LF SYSTEM</li>
+                                <li>MAJESTIC</li>
+                                <li>MATRODA B2B SAN PACHO</li>
+                                <li>MATT SASSARI</li>
+                                <li>MAX STYLER</li>
+                                <li>MELÉ</li>
+                                <li>MISS DRE</li>
+                                <li>NOIZU</li>
+                                <li>ODD MOB X OMNOM: HYPERBEAM</li>
+                                <li>POCKET</li>
+                                <li>RIORDAN</li>
+                                <li>SHIBA SAN</li>
+                                <li>SOSA</li>
+                                <li>TOBEHONEST</li>
+                                <li>WILL CLARKE</li>
+                                <li>ZOF</li>
+                            </ul>
+                        </section>
+                        <section id="bionicJungle" class="hiddenItem">
+                            <h3>Bionic Jungle</h3>
+                            <img src="images/BionicJungle.jpeg" alt="Jungle vibes at Bionic Jungle with lasers and crowd of people" width="500" height="400">
+                            <ul class="lineupList" aria-label="lineup list">
+                                <li>BIANCA OBLIVION</li>
+                                <li>BOYS NOIZE B2B VTSS</li>
+                                <li>DENIS SULTA</li>
+                                <li>DJ HEARTSTRING</li>
+                                <li>EAST END DUBS</li>
+                                <li>FLEUR SHORE</li>
+                                <li>HAAI</li>
+                                <li>HINT OF LAVENDER</li>
+                                <li>INTERPLANETARY CRIMINAL</li>
+                                <li>JUSTIN JAY</li>
+                                <li>JYOTY</li>
+                                <li>MARLIE</li>
+                                <li>ODEN & FATZO</li>
+                                <li>PANTEROS666</li>
+                                <li>PRUNK</li>
+                                <li>RANGER TRUCCO</li>
+                                <li>SALLY C B2B MATISA</li>
+                                <li>SKIN ON SKIN</li>
+                                <li>X-COAST</li>
+                                <li>ZEN FREEMAN</li>
+                            </ul>
+                        </section>
+                    <section id="switcherButtons">
+                        <h2 class="sr-only">Click on a Button to View a Product</h2>
+                        <button id="btn1">Kinetic Field</button>
+                        <button id="btn2">Cosmic Meadow</button>
+                        <button id="btn3">Circuit Grounds</button>
+                        <button id="btn4">Neon Garden</button>
+                        <button id="btn5">Basspod</button>
+                        <button id="btn6">Wasteland</button>
+                        <button id="btn7">Quantum Valley</button>
+                        <button id="btn8">Stereo Bloom</button>
+                        <button id="btn9">Bionic Jungle</button>
+                    </section>
+        </section>
+        <section id="game">
+                    <h2>PLAY TO WIN</h2>
+                    <p>Think you've got luck on your side? Take a guess!<br>
+                    Enter a number between 1 and 10 for a shot at winning something amazing from our shop.<br> 
+                    Go ahead, give it your best shot!</p>
+                    <section id="gameForm">
+                    <form id="guessForm">
+                        <label for="userGuess">Enter a Number Between 1 and 10:</label>
+                        <input type="number" name="userGuess" id="userGuess" min="1" max="10">
+                        <button id="guessingGame" type="submit">Take a Guess!</button>
+                    </form>
+                    </section>
+                    <section id="gameResults" aria-live="polite">
+                        <span id="guess"></span><br>
+                        <span id="randomNum"></span><br>
+                        <span id="gameMessage"></span>
+                    </section>
+        </section>
+        <section id="contact">
+            <div id="contactBg">
+                <div>
+                    <h2>CONTACT US</h2>
+                    <p>We're here to help! Have a question, feedback, or just want to say hello? Feel free to reach out to us. Our team is ready to assist you.</p> <p>We'll get back to you as soon as possible. Looking forward to hearing from you!</p>
+                    <section id="contactForm">
+                        <h3>Get In Touch With Us</h3>
+                        <form id="newContact" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+                            <label for="firstName">First Name: <span class="required">*</span></label>
+                            <input type="text" name="firstName" id="firstName">
+                            <span id="firstNameError" class="hide">First name is required</span>
+
+                            <label for="lastName">Last Name: <span class="required">*</span></label>
+                            <input type="text" name="lastName" id="lastName">
+                            <span id="lastNameError" class="hide">Last name is required</span>
+
+                            <label for="number">Phone Number: <span class="required" id="phoneReq"></span></label>
+                            <input type="tel" name="number" id="number">
+                            <span id="phoneNumError" class="hide">Phone number is required</span>
+
+                            <label for="email">Email: <span id="emailReq"></span></label>
+                            <input type="email" name="email" id="email" autocomplete="none">
+                            <span id="emailError" class="hide">Email is required</span>
+
+                            <fieldset>
+                                <legend>Preferred Method Of Contact <span class="required">*</span></legend>
+                                <input type="radio" name="contactPref" id="prefPhone" required checked>
+                                <label for="prefPhone" class="customRadio">Phone</label>
+                                <input type="radio" name="contactPref" id="prefEmail">
+                                <label for="prefEmail" class="customRadio">Email</label>
+                            </fieldset>
+
+                            <label for="message">Your message: <span class="required">*</span></label>
+                            <textarea id="message"></textarea>
+                            <span id="messageError" class="hide">Comments are required</span>
+
+                            <input type="submit" name="mySubmit" id="mySubmit">
+                        </form>
+                        <p id="formDataDisplay" class="hide"></p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="socials">
+            <div>
+                <h2>Our Social Media Links</h2>
+                <a href="https://twitter.com/EDC_LasVegas" aria-label="EDC Las Vegas on X"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+                <a href="https://www.facebook.com/electricdaisycarnival" aria-label="EDC Las Vegas on Facebook"><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
+                <a href="https://www.instagram.com/edc_lasvegas/" aria-label="EDC Las Vegas on Instagram"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy;<span>2024</span> Araceli Valles</p>
+        <p>This site is for educational purpose only</p>
+    </footer>
+</body>
+</html>
